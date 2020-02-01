@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ControllerBinding">
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa353535"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/close"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_ip"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="IP"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_left"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:paddingRight="3dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_ok"
+                app:layout_constraintEnd_toStartOf="@+id/btn_ok"
+                app:layout_constraintTop_toTopOf="@+id/btn_ok" />
+
+            <ImageView
+                android:id="@+id/btn_right"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:paddingLeft="3dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_ok"
+                app:layout_constraintStart_toEndOf="@+id/btn_ok"
+                app:layout_constraintTop_toTopOf="@+id/btn_ok" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/shape_transblack_corner20"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_close" />
+
+            <ImageView
+                android:id="@+id/btn_top"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:paddingBottom="3dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_arrow_up_white_36dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+                app:layout_constraintEnd_toEndOf="@+id/btn_ok"
+                app:layout_constraintStart_toStartOf="@+id/btn_ok" />
+
+            <ImageView
+                android:id="@+id/btn_bottom"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:paddingTop="3dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_arrow_down_white_36dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_ok"
+                app:layout_constraintStart_toStartOf="@+id/btn_ok"
+                app:layout_constraintTop_toBottomOf="@+id/btn_ok" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_return_white_24dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_left"
+                app:layout_constraintStart_toStartOf="@+id/btn_left"
+                app:layout_constraintTop_toBottomOf="@+id/btn_bottom" />
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_brightness_high_white_24dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_ok"
+                app:layout_constraintStart_toStartOf="@+id/btn_ok"
+                app:layout_constraintTop_toBottomOf="@+id/btn_bottom" />
+
+            <ImageView
+                android:id="@+id/btn_plus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_drop_up_white_36dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_right"
+                app:layout_constraintStart_toStartOf="@+id/btn_right"
+                app:layout_constraintTop_toBottomOf="@+id/btn_bottom" />
+
+            <ImageView
+                android:id="@+id/btn_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_wallet_membership_white_24dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_back"
+                app:layout_constraintStart_toStartOf="@+id/btn_back"
+                app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+            <ImageView
+                android:id="@+id/btn_menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_menu_white_24dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_setting"
+                app:layout_constraintStart_toStartOf="@+id/btn_setting"
+                app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+            <ImageView
+                android:layout_marginBottom="40dp"
+                android:id="@+id/btn_minus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_gray_line_keyboard"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_drop_down_white_36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_plus"
+                app:layout_constraintStart_toStartOf="@+id/btn_plus"
+                app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--被选中时是4dp的底部边线-->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval" >
+                    <solid android:color="@color/color_666666" />//边框颜色
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+                </shape>
+            </item>
+            <!--    想保留哪一边就设置哪一边边框，列如只有下边框：bottom="0.7dp"，相应的有上top="",left="",right=""    -->
+            <item android:bottom="1px" android:right="1px">
+                <shape android:shape="oval" android:useLevel="false">
+                    <solid android:color="@color/color_666666" />
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!--未被选中的是2dp的底部边线-->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+                    <solid android:color="@color/color_666666" />//边框颜色
+                </shape>
+            </item>
+            <!--    想保留哪一边就设置哪一边边框，列如只有下边框：bottom="0.7dp"，相应的有上top="",left="",right=""    -->
+            <item android:bottom="1px" android:right="1px">
+                <shape android:shape="oval">
+                    <solid android:color="@color/color_666666" />
+                    <size
+                        android:width="20dp"
+                        android:height="20dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
