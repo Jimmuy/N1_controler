@@ -36,7 +36,10 @@ class ControllerActivity : CoreActivity<ControllerBinding>(), View.OnClickListen
         binding.onClick = this
         val domain = PreferenceUtils.getPrefString(this, "domain", "")
         if (domain.isNotBlank()) {
-            host = domain
+            binding.tvIp.text = domain
+            host = "http://$domain:8080/v1/"
+        }else{
+            binding.tvIp.text = "请输入N1 IP地址"
         }
 
     }
@@ -51,7 +54,7 @@ class ControllerActivity : CoreActivity<ControllerBinding>(), View.OnClickListen
                     "取消",
                     { dialog, _ -> dialog.dismiss() },
                     "确定",
-                    { dialog, _ -> navigate(26) },
+                    { _, _ -> navigate(26) },
                     false
                 )
             }
@@ -97,7 +100,8 @@ class ControllerActivity : CoreActivity<ControllerBinding>(), View.OnClickListen
                         return@showInputDialog
                     }
                     host = "http://$it:8080/v1/"
-                    PreferenceUtils.setPrefString(this, "domain", host)
+                    binding.tvIp.text = it
+                    PreferenceUtils.setPrefString(this, "domain", it)
                 }
             }
         }

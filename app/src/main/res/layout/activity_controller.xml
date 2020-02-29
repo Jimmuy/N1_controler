@@ -41,15 +41,15 @@
                 android:id="@+id/btn_ip"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="IP"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:layout_marginEnd="18dp"
                 android:layout_marginTop="60dp"
+                android:layout_marginEnd="18dp"
                 android:background="@drawable/selector_gray_line_keyboard"
                 android:gravity="center"
                 android:onClick="@{onClick}"
                 android:scaleType="center"
+                android:text="IP"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -200,11 +200,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_back" />
 
             <ImageView
-                android:layout_marginBottom="40dp"
                 android:id="@+id/btn_minus"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
                 android:background="@drawable/selector_gray_line_keyboard"
                 android:gravity="center"
                 android:onClick="@{onClick}"
@@ -214,6 +214,17 @@
                 app:layout_constraintEnd_toEndOf="@+id/btn_plus"
                 app:layout_constraintStart_toStartOf="@+id/btn_plus"
                 app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="#88ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/btn_top"
+                app:layout_constraintEnd_toEndOf="@+id/btn_top"
+                app:layout_constraintStart_toStartOf="@+id/btn_top" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
