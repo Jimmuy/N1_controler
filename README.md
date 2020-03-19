@@ -48,4 +48,4 @@ URL: http://N1的IP:8080/v1/action (打开设置界面)
 {"action":"setting"}
 
 
-祝大家使用的开心
+祝大家使用的开心!
