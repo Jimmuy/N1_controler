@@ -12,7 +12,11 @@
 
 ### app界面截图：
 
-![controller.png](https://i.loli.net/2020/02/01/8Zzf6aTSr1MAWiv.png)
+![android版本](https://i.loli.net/2020/02/01/8Zzf6aTSr1MAWiv.png)
+
+### 另外感谢值友-id:自然纯真 提供了微信小程序版本遥控器（微信小程序搜索 微遥控器）
+
+![小程序版本](https://i.loli.net/2020/04/23/NLE7bFwhrZ4nDM8.png)
 
 - 首次使用前请先查看你的盒子的IP地址，例如我的是192.168.168.113，在界面的右上方点击IP按钮,输入即可，当盒子连接的网络发生变化的时候需要及时更换确保遥控器生效
 - 确保手机wifi和盒子处在同一个网络中，才能使遥控器生效
