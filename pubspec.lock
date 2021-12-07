@@ -50,6 +50,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.3"
+  dio:
+    dependency: transitive
+    description:
+      name: dio
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.0.10"
   fake_async:
     dependency: transitive
     description:
@@ -62,11 +69,27 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_net:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "16e19c7"
+      resolved-ref: "16e19c7105c0bf129cd2563d70aa19131ef5154f"
+      url: "https://github.com/Jimmuy/flutter_net.git"
+    source: git
+    version: "0.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  http_parser:
+    dependency: transitive
+    description:
+      name: http_parser
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.1.4"
   matcher:
     dependency: transitive
     description:
